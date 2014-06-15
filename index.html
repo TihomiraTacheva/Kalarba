@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pulse effect</title>
+    <style>
+    body {
+        background: url('images/dirt.png')
+    }
+    .btn-pulse {
+        display: block;
+        width:48px;
+        height:48px;
+        background: url('images/menu.png') center center no-repeat;
+        -webkit-animation: pulse_animation 1s ease-in-out infinite;
+        -webkit-transform:tramslateZ(0);
+        -moz-animation: pulse_animation 1s ease-in-out infinite;
+        -moz-transform:tramslateZ(0);
+        -o-animation: pulse_animation 1s ease-in-out infinite;
+        -o-transform:tramslateZ(0);
+        animation: pulse_animation 1s ease-in-out infinite;
+        transform:tramslateZ(0);
+    }
+    @-webkit-keyframes pulse_animation {
+        50% {
+            -webkit-transform: scale(1.1);
+        }
+        100% {
+            -webkit-transform: scale(1);
+        }
+    }
+    @-moz-keyframes pulse_animation {
+        50% {
+            -moz-transform: scale(1.1);
+        }
+        100% {
+            -moz-transform: scale(1);
+        }
+    }
+    @-o-keyframes pulse_animation {
+        50% {
+            -o-transform: scale(1.1);
+        }
+        100% {
+            -o-transform: scale(1);
+        }
+    }
+    @keyframes pulse_animation {
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="btn-pulse"></a>
+
+
+    </header>
+</body>
+
+</html>

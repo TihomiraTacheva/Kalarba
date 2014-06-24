@@ -1,0 +1,77 @@
+@font-face {
+    font-family: brookeshappelldots;
+    src: url('brookeshappelldots.ttf') 
+}
+
+body {
+    background-color: #A4C2CB;
+}
+
+.content {
+    background-color: #fff;
+    border: 0.625em solid lightgrey;
+    height: 700px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:  "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 25px;
+    
+}
+
+.domain_name {
+    width: 200px;
+    margin-left: 400px;
+    padding-top: -50px;
+    text-transform: uppercase;
+    color: red;
+    font-size: 40px;
+    font-family: brookeshappelldots;
+    display: inline;
+    
+}
+.section_jokes {
+    color: blue;
+    font-size: 40px;
+}
+
+.next {
+    float: right;
+   margin-left: 150px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100px;
+    background-color: #A4C2CB;
+    color: black;
+}
+
+a {
+    
+}
+
+a.buttontwitterpopup {
+    width: 150px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #E1E1E1;
+    background-image: url('twitter_logo.gif');
+    background-repeat: no-repeat;
+}
+
+a.buttonfacebookpopup {
+    width: 250px !important;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #E1E1E1;
+    background-image: url('facebook_logo.gif');
+    background-repeat: no-repeat;
+}
+

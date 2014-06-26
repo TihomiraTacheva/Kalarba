@@ -7,10 +7,10 @@ body {
     background-color: #A4C2CB;
 }
 
-.content {
+section {
     background-color: #fff;
     border: 0.625em solid lightgrey;
-    height: 700px;
+    
     width: 40%;
     margin-left: auto;
     margin-right: auto;
@@ -26,52 +26,54 @@ body {
     
 }
 
-.domain_name {
+header {
     width: 200px;
     margin-left: 400px;
     padding-top: -50px;
     text-transform: uppercase;
-    color: red;
     font-size: 40px;
     font-family: brookeshappelldots;
     display: inline;
-    
+    color: blue !important; 
+    text-decoration: none;
 }
-.section_jokes {
+
+header a {
     color: blue;
+    text-decoration: none;
+}
+
+.section_jokes {
+    color: yellow;
     font-size: 40px;
 }
 
 .next {
     float: right;
-   margin-left: 150px;
+    margin-left: 150px;
     border: 1px solid black;
     border-radius: 20px;
     width: 100px;
     background-color: #A4C2CB;
     color: black;
+    font-weight: bold;
 }
 
-a {
-    
-}
-
-a.buttontwitterpopup {
-    width: 150px;
-    text-decoration: none;
+.previous {
+    float: left;
+    border: 1px solid black;
     border-radius: 20px;
-    background-color: #E1E1E1;
-    background-image: url('twitter_logo.gif');
-    background-repeat: no-repeat;
+    width: 100px;
+    background-color: #A4C2CB;
+    color: black;
+    font-weight: bold;
 }
 
-a.buttonfacebookpopup {
-    width: 250px !important;
-    height: 30px;
-    text-decoration: none;
-    border-radius: 20px;
-    background-color: #E1E1E1;
-    background-image: url('facebook_logo.gif');
-    background-repeat: no-repeat;
+input[type='submit']:hover {
+    background-color: yellow;
 }
+
+
+
+
 

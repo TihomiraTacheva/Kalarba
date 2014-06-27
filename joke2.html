@@ -3,7 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>joke2</title>
-        <link type="text/css" rel="stylesheet" href="joke.css"
+        <link type="text/css" rel="stylesheet" href="joke.css">
+        <style>
+            ul li {display: inline;}
+        </style>
     </head>
     <body>
         <header><a href="#">name of the site:</a> <span class="section_jokes">jokes</span></header>
@@ -21,9 +24,19 @@
             <form action="joke1.html">
                 <input class="previous" type="submit" value="Previous">
             </form>
-            <form action="joke3.html">
+            <form action="joke3.html" type="submit" value="Next" >
                 <input class="next" type="submit" value="Next">
-            </form><br>
+            </form><br><br>
+             <div id="share-btn">Share in:
+            <ul style="list-style-type: none; margin-left: 45px; margin-top: -24px;">
+                <li>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"><img src="images/fb.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/fairtoshare" target="_blank"><img src="images/twi.png"></a>
+                </li>
+            </ul>
+            </div>
         </section>   
     </body>    
 </html>

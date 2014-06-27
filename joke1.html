@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>joke1</title>
         <link type="text/css" rel="stylesheet" href="joke.css">
+        <style>
+            ul li {display: inline;}
+        </style>
     </head>
     <body>
         <header><a href="#" >name of the site:</a> <span class="section_jokes">jokes</span></header>
@@ -24,9 +27,19 @@
 
         <p>"Well", says the man, "you don’t know where you are or where you’re going, but you expect me to be able to help. You’re in the same position you were         before we met, but now it’s my fault."</p>
             <hr>
-            <form style="margin-left: 100px" action="joke2.html">
+            <form action="joke2.html">
                 <input class="next" type="submit" value="Next">
-            </form>
+            </form><br><br>
+            <div id="share-btn">Share in:
+            <ul style="list-style-type: none; margin-left: 45px; margin-top: -24px;">
+                <li>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"><img src="images/fb.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/fairtoshare" target="_blank"><img src="images/twi.png"></a>
+                </li>
+            </ul>
+            </div>
         </section>
     </body>
 </html>

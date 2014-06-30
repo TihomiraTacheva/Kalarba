@@ -75,6 +75,12 @@ input[type='submit']:hover {
     background-color: yellow;
 }
 
+.set-twitter-btn {
+    border: 1px solid black;
+    position: relative;
+    bottom: 6px;
+}
+
 
 
 

@@ -4,17 +4,34 @@
 <head>
     <title>Kalarba Test</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text:600italic' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
 
-    <a href="#" class="btn-pulse"></a>
-    <a href="#ax-about-us" class="btn-next-page"></a>
+    <a href="#" id="btn-nav" class="btn-pulse"></a>
     <a class="team-name grow-rotate" href="https://softuni.bg/">Kalarba</a>
+    <nav class="page-navigation" id="nav-display">
+        <ul>
+            <li class="page-navigation__item"><a href="about-us.html">About us</a></li>
+            <li class="page-navigation__item"><a href="joke1.html">Joke 1</a></li>
+            <li class="page-navigation__item"><a href="joke2.html">Joke 2</a></li>
+            <li class="page-navigation__item"><a href="joke3.html">Joke 3</a></li>
+            <li class="page-navigation__item" class="validation"><a href="http://validator.w3.org/">Validate our site here :)</a></li>
+        </ul>
+    </nav>
 
+<script>
+    document.getElementById('btn-nav').onclick = function() {
+        var menu = document.getElementById('nav-display');
 
-
+        if (menu.hasAttribute('style')) {
+            menu.removeAttribute('style');
+        } else {
+            menu.style.display = 'block';
+        }
+    };
+    </script>
 </body>
-
 </html>

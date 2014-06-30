@@ -21,11 +21,18 @@ html {
     background-color: #FFFFFF;
 }
 body {
-    line-height: 1;
+    line-height: 1.4;
     height: 100%;
     width:100%;
-    font: 12px Arial;
-	background-image: url("images/dirt.png");
+    font-size: 18px;
+    font-family:'Crimson Text', serif;
+    background-image: url("images/dirt.png");
+}
+h1 {
+    line-height: 2;
+}
+h2 {
+    line-height: 1.6;
 }
 ol, ul {
     list-style: none;
@@ -41,63 +48,62 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/******************************
+/*=================================
 Navigation - pulsing button
-*******************************/
-    .btn-pulse {
-       display: block; 
-        width:50px;
-        height:50px;
-		position: absolute;
-		left: 20px;
-		top: 20px;
-        background: url('images/menu.png') center center no-repeat;
-        -webkit-animation: pulse_animation 1s ease-in-out infinite;
-        -webkit-transform:tramslateZ(0);
-        -moz-animation: pulse_animation 1s ease-in-out infinite;
-        -moz-transform:tramslateZ(0);
-        -o-animation: pulse_animation 1s ease-in-out infinite;
-        -o-transform:tramslateZ(0);
-        animation: pulse_animation 1s ease-in-out infinite;
-        transform:tramslateZ(0);
+=================================*/
+ .btn-pulse {
+    display: block;
+    width:50px;
+    height:50px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background: url('images/menu.png') center center no-repeat;
+    -webkit-animation: pulse_animation 1s ease-in-out infinite;
+    -webkit-transform:tramslateZ(0);
+    -moz-animation: pulse_animation 1s ease-in-out infinite;
+    -moz-transform:tramslateZ(0);
+    -o-animation: pulse_animation 1s ease-in-out infinite;
+    -o-transform:tramslateZ(0);
+    animation: pulse_animation 1s ease-in-out infinite;
+    transform:tramslateZ(0);
+}
+@-webkit-keyframes pulse_animation {
+    50% {
+        -webkit-transform: scale(1.1);
     }
-    @-webkit-keyframes pulse_animation {
-        50% {
-            -webkit-transform: scale(1.1);
-        }
-        100% {
-            -webkit-transform: scale(1);
-        }
+    100% {
+        -webkit-transform: scale(1);
     }
-    @-moz-keyframes pulse_animation {
-        50% {
-            -moz-transform: scale(1.1);
-        }
-        100% {
-            -moz-transform: scale(1);
-        }
+}
+@-moz-keyframes pulse_animation {
+    50% {
+        -moz-transform: scale(1.1);
     }
-    @-o-keyframes pulse_animation {
-        50% {
-            -o-transform: scale(1.1);
-        }
-        100% {
-            -o-transform: scale(1);
-        }
+    100% {
+        -moz-transform: scale(1);
     }
-    @keyframes pulse_animation {
-        50% {
-            transform: scale(1.1);
-        }
-        100% {
-            transform: scale(1);
-        }
+}
+@-o-keyframes pulse_animation {
+    50% {
+        -o-transform: scale(1.1);
     }
-	
-/******************************
+    100% {
+        -o-transform: scale(1);
+    }
+}
+@keyframes pulse_animation {
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/*=================================
 Team name
-*******************************/
-.team-name {
+==================================*/
+ .team-name {
     text-align: center;
     color:black;
     text-decoration: none;
@@ -147,15 +153,34 @@ Team name
     transform: scale(1.1) rotate(4deg);
 }
 .team-name:hover {
-   background: -moz-linear-gradient(45deg, rgba(229,229,229,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(229,229,229,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(45deg, rgba(229,229,229,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(45deg, rgba(229,229,229,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(45deg, rgba(229,229,229,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-background: linear-gradient(45deg, rgba(229,229,229,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   background: -moz-linear-gradient(-45deg, rgba(169,199,206,0) 0%, rgba(169,199,206,0.8) 15%, rgba(169,199,206,1) 19%, rgba(169,199,206,1) 20%, rgba(146,194,206,1) 50%, rgba(167,200,209,1) 80%, rgba(167,200,209,1) 81%, rgba(167,200,209,0.8) 85%, rgba(167,200,209,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(169,199,206,0)), color-stop(15%,rgba(169,199,206,0.8)), color-stop(19%,rgba(169,199,206,1)), color-stop(20%,rgba(169,199,206,1)), color-stop(50%,rgba(146,194,206,1)), color-stop(80%,rgba(167,200,209,1)), color-stop(81%,rgba(167,200,209,1)), color-stop(85%,rgba(167,200,209,0.8)), color-stop(100%,rgba(167,200,209,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg, rgba(169,199,206,0) 0%,rgba(169,199,206,0.8) 15%,rgba(169,199,206,1) 19%,rgba(169,199,206,1) 20%,rgba(146,194,206,1) 50%,rgba(167,200,209,1) 80%,rgba(167,200,209,1) 81%,rgba(167,200,209,0.8) 85%,rgba(167,200,209,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg, rgba(169,199,206,0) 0%,rgba(169,199,206,0.8) 15%,rgba(169,199,206,1) 19%,rgba(169,199,206,1) 20%,rgba(146,194,206,1) 50%,rgba(167,200,209,1) 80%,rgba(167,200,209,1) 81%,rgba(167,200,209,0.8) 85%,rgba(167,200,209,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg, rgba(169,199,206,0) 0%,rgba(169,199,206,0.8) 15%,rgba(169,199,206,1) 19%,rgba(169,199,206,1) 20%,rgba(146,194,206,1) 50%,rgba(167,200,209,1) 80%,rgba(167,200,209,1) 81%,rgba(167,200,209,0.8) 85%,rgba(167,200,209,0) 100%); /* IE10+ */
+background: linear-gradient(135deg, rgba(169,199,206,0) 0%,rgba(169,199,206,0.8) 15%,rgba(169,199,206,1) 19%,rgba(169,199,206,1) 20%,rgba(146,194,206,1) 50%,rgba(167,200,209,1) 80%,rgba(167,200,209,1) 81%,rgba(167,200,209,0.8) 85%,rgba(167,200,209,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a9c7ce', endColorstr='#00a7c8d1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-
-/******************************
-
-*******************************/
+/*===============================
+Page Navigation
+================================*/
+ a {
+    text-decoration: none;
+    color:white;
+}
+.page-navigation {
+    font-family:'Crimson Text', serif;
+    width:200px;
+    height: 100%;
+    background: #222222;
+    text-align: center;
+    display: none;
+    font-style: italic;
+}
+.page-navigation ul {
+    position: relative;
+    top:40%;
+}
+.page-navigation__item:hover a{
+    color:#A1BFC8;
+}

@@ -5,7 +5,9 @@
 
 body {
     background-color: #A4C2CB;
+    background-image: url("images/dirt.png");
 }
+
 
 section {
     background-color: #fff;
